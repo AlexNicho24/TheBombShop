@@ -1,0 +1,36 @@
+.product--item{
+  &__sale{
+    color: $color__black;
+    text-transform: uppercase;
+  }
+  &__boards{
+    height: 35rem;
+
+    &--two{
+      height: 35rem;
+    }
+  }
+}
+
+.product--container{
+  width: 33%;
+  padding-top: 2rem;
+
+  & img{
+    width: 50%;
+    transition: all .3s;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+
+  & figcaption{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  & p{
+    font-size: 1.5rem;
+  }
+}

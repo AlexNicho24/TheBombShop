@@ -1,0 +1,25 @@
+.u-center-text{text-align: center !important;}
+
+.u-margin-bottom-small{margin-bottom: 1.5em !important;}
+.u-margin-bottom-medium{
+  margin-bottom: 4rem !important;
+
+  @include respond(Tablet-Portrait){
+    margin-bottom: 3rem !important;
+  }
+}
+.u-margin-bottom-big{
+  margin-bottom: 8rem !important;
+
+  @include respond(Tablet-Portrait){
+    margin-bottom: 5rem !important;
+  }
+}
+
+.u-margin-top-small{margin-top: 5rem !important;}
+.u-margin-top-big{margin-top: 8rem !important;}
+.u-margin-top-huge{margin-top: 10rem !important;}
+.border-bottom-small{border-bottom: .1rem solid #323232; width: 70%;}
+.border-bottom-huge{border-bottom: .1rem solid #323232; width: 100%;}
+.border-top-small{border-top: .1rem solid #323232; width: 60%;}
+.border-top-huge{border-top: .1rem solid #323232; width: 100%;}

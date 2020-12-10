@@ -1,0 +1,66 @@
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 400; font-size: 16px;
+  line-height: 1.7; color: $color__grey--dark;
+}
+
+.heading__primary{
+  color: $color__black;
+  text-transform: uppercase;
+  font-family: 'Bangers', cursive;
+
+  &--title{
+    color: $color__black;
+    text-transform: uppercase;
+    font-family: 'Bangers', cursive;
+    font-size: 7rem;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &--promo-one{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 6rem;
+    color: $color__white;
+    animation: moveInLeft 1s ease-in;
+  }
+
+  &--promo-two{
+    font-family: 'Bangers', cursive;
+    font-size: 7rem;
+    color: $color__white;
+    animation: flipLeft 1s ease-in;
+    backface-visibility: hidden;
+  }
+
+  &--promo-three{
+    font-family: 'Kavoon', cursive;
+    font-size: 7rem;
+    color: $color__grey--light-1;
+    animation: moveInRight 1s ease-in;
+  }
+}
+
+.heading__subheader{
+  &--promo-one{
+    font-family: 'Bangers', cursive;
+    font-size: 5rem;
+    color: $color__white;
+    animation: flipRight 1s ease-in;
+    backface-visibility: hidden;
+  }
+
+  &--promo-two{
+    font-family: 'Kavoon', cursive;
+    font-size: 5rem;
+    color: $color__grey--light-1;
+    animation: moveInLeft 1s ease-in;
+  }
+}
+
+.paragraph{
+  font-size: $default-font-size;
+  max-width: 75rem;
+}

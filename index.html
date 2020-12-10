@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+		<title>TheBombShop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" async></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous" async></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bangers&family=Kavoon&display=swap" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="navigation">
+          <img src="img/logo1.png" alt="BombShop Logo" class="navigation__logo">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Board Series</a>
+              <svg class="search__icon--2">
+                <use xlink:href="img/sprite.svg#icon-ctrl"></use>
+              </svg>
+              <ul>
+                <li><a href="downhill.html">Downhill Series</a></li>
+                <li><a href="grindboard.html">Grind Boards</a></li>
+                <li><a href="nightrider.html">Night Rider Series</a></li>
+                <li><a href="crusier.html">Crusier Series</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Shop</a>
+              <svg class="search__icon--2">
+                <use xlink:href="img/sprite.svg#icon-ctrl"></use>
+              </svg>
+              <ul>
+                <li><a href="safteygear.html">Saftey Gear</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <form class="search" action="#">
+            <input type="text" class="search__input" placeholder="search">
+            <button class="search__button">
+              <svg class="search__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+
+          <div class="navigation__container">
+            <p class="navigation__container--label">Cart</p>
+            <svg class="navigation__container--cart">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="homepage">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="overlay--one">
+              <img src="img\carousel_img\park.jpeg" class="d-block homepage carousel__img" alt="a guy doing a trick in the bowl">
+            </div>
+            <div class="carousel-caption">
+              <h2 class="heading__primary--promo-one">Checkout Our Grind <br/>Style Boards</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay--two">
+              <img src="img\carousel_img\night_cruise.jpg" class="d-block homepage carousel__img" alt="Guy holding his board on a hill">
+            </div>
+            <div class="carousel-caption--two">
+              <h2 class="heading__primary--promo-two">All New 2021</h2>
+              <h3 class="heading__subheader--promo-one">Night Rider Series</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay--three">
+              <img src="img\carousel_img\crusier.jpg" class="d-block homepage carousel__img" alt="blue shoes on a crusier longboard">
+            </div>
+            <div class="carousel-caption--three">
+              <h2 class="heading__primary--promo-three">Relax and Kickback</h2>
+              <h3 class="heading__subheader--promo-two">Crusier Series</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured_boards">
+      <h1 class="heading__primary u-center-text u-margin-bottom-medium u-margin-top-big featured_boards--header">Featured Pintail Sales</h1>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="featured_boards--img">
+              <div class="product--item">
+                <figcaption class="product--item__sale u-center-text">
+                  <img src="img/crusier1.jpg" alt="space pintail longboard" class="product--item__boards">
+                  <p class="sale__title">Grascap Surf</p>
+                  <p class="sale__price">$150.00</p>
+                </figcaption>
+              </div>
+              <div class="product--item">
+                <figcaption class="product--item__sale u-center-text">
+                  <img src="img/crusier2.jpg" alt="surfer waves pintail longboard" class="product--item__boards">
+                  <p class="sale__title">Cavern Cutback</p>
+                  <p class="sale__price">$174.00</p>
+                </figcaption>
+              </div>
+              <div class="product--item">
+                 <figcaption class="product--item__sale u-center-text">
+                   <img src="img/crusier3.jpg" alt="obtuse shapes pintail longboard" class="product--item__boards">
+                   <p class="sale__title">Arbor Timeless</p>
+                   <p class="sale__price">$160.00</p>
+                 </figcaption>
+               </div>
+               <div class="product--item">
+                 <figcaption class="product--item__sale u-center-text">
+                   <img src="img/crusier4.jpg" alt="paper boat pintail longboard" class="product--item__boards">
+                   <p class="sale__title">Redemption</p>
+                   <p class="sale__price">$99.79</p>
+                 </figcaption>
+               </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="featured_boards--img">
+              <div class="product--item">
+                <figcaption class="product--item__sale u-center-text">
+                  <img src="img/crusier5.jpg" alt="graffiti eye pintail longboard" class="product--item__boards--two">
+                  <p class="sale__title">Redemption</p>
+                  <p class="sale__price">$99.79</p>
+                </figcaption>
+              </div>
+              <div class="product--item">
+                <figcaption class="product--item__sale u-center-text">
+                  <img src="img/crusier6.jpg" alt="afternoon sky surfer waves pintail longboard" class="product--item__boards--two">
+                  <p class="sale__title">Ledger Complete</p>
+                  <p class="sale__price">$120.00</p>
+                </figcaption>
+              </div>
+              <div class="product--item">
+                <figcaption class="product--item__sale u-center-text">
+                  <img src="img/crusier7.jpg" alt="volcanic eruption pintail longboard" class="product--item__boards--two">
+                  <p class="sale__title">Erupt</p>
+                  <p class="sale__price">$154.62</p>
+                </figcaption>
+              </div>
+              <div class="product--item">
+                <figcaption class="product--item__sale u-center-text">
+                  <img src="img/crusier8.jpg" alt="battery powered obtuse shapes pintail longboard" class="product--item__boards">
+                  <p class="sale__title">Kickback</p>
+                  <p class="sale__price">$70.79</p>
+                </figcaption>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+
+    <section class="img--banner">
+      <div data-aos="fade-left">
+        <figcaption class="img--banner__header">Saftey Gear</figcaption>
+      </div>
+      <div data-aos="fade-up-left">
+        <figcaption class="img--banner__header2">30% all saftey gear with a purchase of a crusier</figcaption>
+      </div>
+    </section>
+
+    <section class="img--logos">
+      <img src="img/landyachtz.jpg" alt="Landyachtz company logo" class="img--logos__logo1"/>
+      <img src="img/Rayne.jpg" alt="Rayne company logo" class="img--logos__logo2"/>
+      <img src="img/sector9.jpg" alt="Sector9 company logo" class="img--logos__logo3"/>
+      <img src="img/loaded.jpg" alt="Loaded company logo" class="img--logos__logo4"/>
+    </section>
+
+    <section class="photo__collection">
+      <div class="background__color-yellow"></div>
+      <div class="background__color-navyblue"></div>
+      <div class="background__color-red"></div>
+
+        <div class="photo__collection--container">
+          <img src="img/sunset_longboard.jpg" alt="2 guys riding down a hill" class="photo__collection--collage"/>
+          <figcaption class="photo__collection--caption--primary">Downhill Series</figcaption>
+        </div>
+
+        <div class="photo__collection--container">
+          <img src="img/downhill_longboard.jpg" alt="a guy crusing on a longboard" class="photo__collection--collage"/>
+          <figcaption class="photo__collection--caption--primary">Crusier Series</figcaption>
+        </div>
+
+        <div class="photo__collection--container--middle">
+          <img src="img/longboard_night.jpg" alt="a guy riding his longboard at night" class="photo__collection--collage"/>
+          <figcaption class="photo__collection--caption--primary">Night Rider Series</figcaption>
+        </div>
+
+        <div class="photo__collection--container--middle">
+          <img src="img/clothing.jpg" alt="A girl holding a longboard on the docks" class="photo__collection--collage"/>
+          <figcaption class="photo__collection--caption--primary">Clothing</figcaption>
+        </div>
+
+
+        <div class="photo__collection--container--middle">
+          <img src="img/accessories.jpg" alt="Accessories" class="photo__collection--collage"/>
+          <figcaption class="photo__collection--caption--secondary">Accessories</figcaption>
+        </div>
+    </section>
+
+
+    <footer class="footer u-margin-top-small">
+      <div class="footer__container">
+        <a href="about.html"><h2 class="footer__container--nav">ABOUT</h2></a>
+        <div class="footer__container--1">
+          <h2 class="footer__container--nav">BOARDS</h2>
+          <p><a href="downhill.html">Downhill Boards</a></p>
+          <p><a href="grindboard.html">Grind Boards</a></p>
+          <p><a href="nightrider.html">Night Rider Series</a></p>
+          <p><a href="crusier.html">Crusier Series</a></p>
+        </div>
+        <div class="footer__container--2">
+          <h2 class="footer__container--nav">SHOP</h2>
+          <p><a href="#">Saftey Gear</a></p>
+          <p><a href="#">Clothing</a></p>
+          <p><a href="#">Accessories</a></p>
+        </div>
+        <a href="contact.html"><h2 class="footer__container--nav">CONTACT</h2></a>
+      </div>
+
+      <img src="img/logo1.png" alt="Logo of company" class="footer__logo">
+
+      <div class="subscriber__container">
+        <h2 class="">Subscriber List</h2>
+        <form class="subscriber__form" action="#">
+          <p class="subscriber__form--paragraph">Become a subscriber today!</p>
+          <input type="text" name="email" placeholder="Email" class="subscriber__form--email">
+          <input type="submit" name="submit" value="Send" class="subscriber__form--submit">
+        </form>
+        <p class="subscriber__form--paragraph">I have read and accept the Privacy Policy</p>
+      </div>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+.footer{
+  color: #fff;
+  background-color: #000000;
+  padding: 2rem 10rem;
+  font-size: $default-font-size;
+  font-family: 'Bangers', cursive;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__container{
+    display: flex;
+
+    & a{
+      text-decoration: none;
+
+      &::after{
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0%;
+        opacity: 0;
+        background-color: $color__white;
+        transition: all .3s ease-in;
+      }
+
+      &:hover:after{
+        opacity: 1;
+        width: 100%;
+      }
+    }
+
+    &--nav{
+      padding: 1.6rem 3.2rem;
+      border-top: 1px solid $color__white;
+      color: #fff;
+    }
+
+    &--1 p{
+      padding: 0rem 3.2rem;
+      line-height: 1;
+      border-top: 0px;
+
+      & a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+      }
+    }
+
+    &--2 p{
+      padding: 0rem 3.2rem;
+      line-height: 1;
+      border-top: 0px;
+
+      & a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__logo{
+    width: 20rem;
+    border-radius: 50%;
+  }
+
+}
+
+.subscriber__form{
+
+  &--paragraph{
+    font-size: 1.3rem;
+  }
+
+  &--email{
+    padding: .3rem 2rem;
+    border-radius: 100px;
+    border: none;
+  }
+
+  &--submit{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+  }
+}

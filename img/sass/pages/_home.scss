@@ -1,0 +1,56 @@
+.homepage{
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba($color__gradient--primary,0.8),
+  rgba($color__gradient--secondary,0.8), rgba($color__gradient--tertiary,0.8)),url(../img/zigy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.classes{
+  background-color: $color-secondary-light;
+}
+
+.instructors{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $color-secondary-light;
+
+  &__img{
+    margin: 2rem;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.schedule{
+  background-color: $color_primary;
+  &__text{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    color: $color__white;
+    font-size: 2rem;
+  }
+
+  &__img--photos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__img--photos > *{
+    padding-left: 2rem;
+
+    @include respond(Tablet-Landscape){
+      padding: 2rem;
+    }
+  }
+}
+.flex__container--contact{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

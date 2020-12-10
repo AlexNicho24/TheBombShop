@@ -1,0 +1,17 @@
+.contact__guide{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &--img{
+    width: 75rem;
+    margin-left: 4rem;
+    border-radius: 5rem;
+
+    @media (max-width: 90.56em){
+      padding-bottom: 2rem;
+    }
+  }
+}

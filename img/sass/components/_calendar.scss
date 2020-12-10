@@ -1,0 +1,14 @@
+#calendar{
+  max-width: 130rem;
+  margin: 0px auto;
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+  border-radius: 2rem;
+  padding: 40px 40px;
+  background-color: $color__white;
+  font-size: 1.5rem;
+
+  @include respond(Tablet-Landscape){ // width < 1200?
+    max-width: 100rem;
+    font-size: 1.3rem;
+  }
+}

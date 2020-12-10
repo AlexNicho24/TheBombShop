@@ -1,0 +1,45 @@
+.sidebar__navpurple--Dark{
+  min-height: 100vh;
+  width: 0px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #222629;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-left: 0;
+
+  a:focus, a:hover{
+    color: #FFF;
+    text-decoration: none;
+    transition: all 0.3s;
+    background-color: #86C232;
+  }
+}
+
+#slidenav {
+  & .sidebar--header h3{
+   padding: 2.6rem;
+   background-color: #61892F;
+   color: #FFF;
+   font-size: 2rem;
+  }
+
+  ul.components{
+    border-bottom: 1px solid blue;
+  }
+
+  ul p{
+    color: #FFF;
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  ul li a{
+    padding: 2rem;
+    font-size: 2rem;
+    display: block;
+    color: #FFF;
+  }
+}

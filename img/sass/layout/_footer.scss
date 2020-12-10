@@ -1,0 +1,68 @@
+.footer{
+  color: $color__grey--light-1;
+  background-color: $color__grey--dark-3;
+  padding: 10rem 10rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__navigation{
+    margin-top: 5rem;
+    border-top: 1px solid $color__grey--dark;
+    padding-top: 2rem;
+    width: 28%;
+
+    @include respond(Tablet-Landscape){
+      width: 40%;
+    }
+  }
+
+  &__list{
+    list-style: none;
+  }
+
+  &__item{
+    display: inline-block;
+
+    &:not(:last-child){
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link{
+    &:link,
+    &:visited{
+      color: $color__grey--light-1;
+      background-color: $color__grey--dark-3;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all .2s;
+
+    }
+
+    &:hover,
+    &:active{
+      color: $color__red;
+      box-shadow: 0 1rem 2rem rgba($color__black, .4);
+      transform: rotate(5deg) scale(1.3);
+    }
+  }
+
+  &__img{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text{
+    margin-top: 5rem;
+    border-top: 1px solid $color__grey--dark;
+    float: right;
+    width: 30%;
+  }
+
+  &__copyright{
+    padding-top: 2rem;
+  }
+}

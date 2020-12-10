@@ -1,0 +1,105 @@
+//////////////////////////////////////////////////////
+//PHOTO COLLAGE
+.photo__collection{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+  position: relative;
+
+  > *{
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  &--container{
+    max-width: 48%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  &--container--middle{
+    max-width: 30%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:last-child img{
+      height: 40rem;
+    }
+  }
+
+  &--collage{
+    width: 100%;
+    transition: all .5s ease;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+
+  &--caption--primary{
+    @include absolutecenter;
+    background-color: $color-secondary-dark;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: $color__white;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+
+  &--caption--secondary{
+    @include absolutecenter--captions-secondary;
+    background-color: $color-secondary-dark;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: $color__white;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+}
+
+.background__color-yellow{
+  z-index: -1;
+  background-color: $color__yellow;
+  padding: 0 90rem 50rem 50rem;
+  position: absolute;
+}
+
+.background__color-navyblue{
+  z-index: -1;
+  background-color: $color__navyblue;
+  padding: 0 0rem 100rem 55rem;
+  position: absolute;
+  right: 0;
+}
+
+.background__color-red{
+  z-index: -2;
+  background-color: $color__red;
+  padding: 0 0rem 100rem 55rem;
+  position: absolute;
+  left: 0;
+}
+
+//////////////////////////////////////////////////////////////////
+//GALLERY ABOUT PAGE
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__photo{
+    width: 33rem;
+    margin-top: 2rem;
+
+    &--p5{
+      height: 25rem;
+    }
+
+    &:not(first-child){
+      margin-left: 2rem;
+    }
+  }
+}
