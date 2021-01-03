@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////
 //FRONT VIEWER PAGE
-.homepage{
+.homepage {
   position: relative;
   width: 100%;
   top: 0;
@@ -8,46 +8,165 @@
   height: 60rem;
 }
 
-.overlay{
+.overlay {
   display: inline-flex;
   display: relative;
 
-  &--one{
-    background-image: linear-gradient(to bottom, rgba($color__black, 0.5), rgba($color__gradient--secondary, 0.5));
+  &--one {
+    background-image: -webkit-linear-gradient(
+      rgba($color__black, 0.5),
+      rgba($color__gradient--secondary, 0.5)
+    );
+    background-image: -o-linear-gradient(
+      rgba($color__black, 0.5),
+      rgba($color__gradient--secondary, 0.5)
+    );
+    background-image: linear-gradient(
+      rgba($color__black, 0.5),
+      rgba($color__gradient--secondary, 0.5)
+    );
   }
-  &--two{
-    background-image: linear-gradient(to top, rgba($color__black, 0.5), rgba($color__gradient--tertiary, 0.5));
+  &--two {
+    background-image: -webkit-linear-gradient(
+      bottom,
+      rgba($color__black, 0.5),
+      rgba($color__gradient--tertiary, 0.5)
+    );
+    background-image: -o-linear-gradient(
+      bottom,
+      rgba($color__black, 0.5),
+      rgba($color__gradient--tertiary, 0.5)
+    );
+    background-image: linear-gradient(
+      to top,
+      rgba($color__black, 0.5),
+      rgba($color__gradient--tertiary, 0.5)
+    );
   }
-  &--three{
-    background-image: linear-gradient(to top, rgba($color__gradient--quaternary,0.5), rgba($color__gradient--quinary,0.5));
+  &--three {
+    background-image: -webkit-linear-gradient(
+      bottom,
+      rgba($color__gradient--quaternary, 0.5),
+      rgba($color__gradient--quinary, 0.5)
+    );
+    background-image: -o-linear-gradient(
+      bottom,
+      rgba($color__gradient--quaternary, 0.5),
+      rgba($color__gradient--quinary, 0.5)
+    );
+    background-image: linear-gradient(
+      to top,
+      rgba($color__gradient--quaternary, 0.5),
+      rgba($color__gradient--quinary, 0.5)
+    );
   }
-  &--four{
-    background-image: linear-gradient(to bottom, rgba(194, 229, 156, 0.5), rgba(100, 179, 244, 0.5));
+  &--four {
+    background-image: -webkit-linear-gradient(
+      rgba(194, 229, 156, 0.5),
+      rgba(100, 179, 244, 0.5)
+    );
+    background-image: -o-linear-gradient(
+      rgba(194, 229, 156, 0.5),
+      rgba(100, 179, 244, 0.5)
+    );
+    background-image: linear-gradient(
+      rgba(194, 229, 156, 0.5),
+      rgba(100, 179, 244, 0.5)
+    );
   }
-  &--five{
-    background-image:  linear-gradient(to top, rgba(32, 1, 34, 0.6), rgba(111, 0, 0, 0.6));
+  &--five {
+    background-image: -webkit-linear-gradient(
+      bottom,
+      rgba(32, 1, 34, 0.6),
+      rgba(111, 0, 0, 0.6)
+    );
+    background-image: -o-linear-gradient(
+      bottom,
+      rgba(32, 1, 34, 0.6),
+      rgba(111, 0, 0, 0.6)
+    );
+    background-image: linear-gradient(
+      to top,
+      rgba(32, 1, 34, 0.6),
+      rgba(111, 0, 0, 0.6)
+    );
   }
-  &--six{
-    background-image:  linear-gradient(to top, rgba(0, 195, 255, 0.6), rgba(255, 255, 28, 0.6));
+  &--six {
+    background-image: -webkit-linear-gradient(
+      bottom,
+      rgba(0, 195, 255, 0.6),
+      rgba(255, 255, 28, 0.6)
+    );
+    background-image: -o-linear-gradient(
+      bottom,
+      rgba(0, 195, 255, 0.6),
+      rgba(255, 255, 28, 0.6)
+    );
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 195, 255, 0.6),
+      rgba(255, 255, 28, 0.6)
+    );
   }
-  &--seven{
-    background-image: linear-gradient(to left, rgba(26, 41, 128, 0.5),
-    rgba(38, 208, 206, 0.5));
+  &--seven {
+    background-image: -webkit-linear-gradient(
+      right,
+      rgba(26, 41, 128, 0.5),
+      rgba(38, 208, 206, 0.5)
+    );
+    background-image: -o-linear-gradient(
+      right,
+      rgba(26, 41, 128, 0.5),
+      rgba(38, 208, 206, 0.5)
+    );
+    background-image: linear-gradient(
+      to left,
+      rgba(26, 41, 128, 0.5),
+      rgba(38, 208, 206, 0.5)
+    );
+  }
+  &--eight {
+    background-image: -webkit-linear-gradient(
+      rgba(34, 193, 195, 0.5),
+      rgba(253, 187, 45, 0.5)
+    );
+    background-image: -o-linear-gradient(
+      rgba(34, 193, 195, 0.5),
+      rgba(253, 187, 45, 0.5)
+    );
+    background-image: linear-gradient(
+      rgba(34, 193, 195, 0.5),
+      rgba(253, 187, 45, 0.5)
+    );
+  }
+  &--nine {
+    background-image: -webkit-linear-gradient(
+      rgba(68, 160, 141, 0.5),
+      rgba(9, 54, 55, 0.5)
+    );
+    background-image: -o-linear-gradient(
+      rgba(68, 160, 141, 0.5),
+      rgba(9, 54, 55, 0.5)
+    );
+    background-image: linear-gradient(
+      rgba(68, 160, 141, 0.5),
+      rgba(9, 54, 55, 0.5)
+    );
   }
 }
 
 //////////////////////////////////////////////////
 //FEATURED SALES
-.featured_boards{
+.featured_boards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 
-  &--img{
-      display: flex;
+  &--img {
+    display: flex;
   }
 
-  &--header{
+  &--header {
     display: flex;
     flex: 0 0 100%;
     justify-content: center;
@@ -57,72 +176,75 @@
 
 /////////////////////////////////////////////////////
 //HOMEPAGE BANNER
-.img--banner{
+.img--banner {
   display: flex;
   flex-wrap: wrap;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to bottom, rgba($color__gradient--secondaryBanner, 0.8),
-  rgba($color__gradient--tertiaryBanner,0.8)),
-  url("../img/saftey_gear.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color__gradient--secondaryBanner, 0.8),
+      rgba($color__gradient--tertiaryBanner, 0.8)
+    ),
+    url("../img/saftey_gear.jpg");
   padding: 2rem 0;
   overflow: hidden;
 
-  &__header{
+  &__header {
     text-align: center;
     font-size: 10rem;
     color: $color__white;
-    font-family: 'Bangers', cursive;
+    font-family: "Bangers", cursive;
     margin-left: 60rem;
     z-index: 1000;
   }
-  &__header2{
+  &__header2 {
     text-align: center;
-    color:$color__white;
+    color: $color__white;
     font-size: 3rem;
-    font-family: 'Bangers', cursive;
+    font-family: "Bangers", cursive;
     margin-left: 60rem;
     z-index: 1000;
   }
 }
 //////////////////////////////////////////////////
 //SECTIONS
-.section-generic{
+.section-generic {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
   margin-top: 20rem;
 
-  &--sidebar{
+  &--sidebar {
     position: relative;
     padding-right: 15rem;
     width: 60rem;
 
-    &__list{
+    &__list {
       display: none;
       list-style: none;
       text-align: center;
-      padding: .5rem;
-      transition: all .3s;
+      padding: 0.5rem;
+      transition: all 0.3s;
     }
 
-    .active{
+    .active {
       display: block;
     }
 
-    li a{
+    li a {
       font-size: 1.6rem;
       line-height: 2.5rem;
       text-decoration: none;
       color: $color__grey--dark;
     }
 
-    h2{
+    h2 {
       text-decoration: underline;
     }
 
-    & img{
+    & img {
       border-radius: $border-radius-medium;
       width: 100%;
     }
@@ -130,30 +252,38 @@
 }
 //////////////////////////////////////////////////
 //BRAND IMAGES
-.img--logos{
+.img--logos {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 2rem;
 
-  &__logo1{
+  & img {
+    opacity: 0.5;
+    transition: all 0.2s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__logo1 {
     width: 24rem;
   }
-  &__logo2{
+  &__logo2 {
     width: 24rem;
   }
-  &__logo3{
+  &__logo3 {
     width: 30rem;
   }
-  &__logo4{
+  &__logo4 {
     width: 30rem;
   }
 }
 
-
 ///////////////////////////////////////////////////
 //ABOUT US PAGE
-.section-gallery{
+.section-gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -163,46 +293,51 @@
 ////////////////////////////////////////////////////
 //SERIES AND SHOP OUTLINE
 
-.Board{
+.Board {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
   margin-top: 10rem;
 
-  &--sidebar{
+  &--sidebar {
     margin-top: 5rem;
     width: 20%;
     font-size: 25px;
-    font-family: 'Bangers', cursive;
+    font-family: "Bangers", cursive;
 
-    & h3{
+    & h3 {
       border-bottom: 4px solid #ddd;
       font-size: 30px;
       color: $color__black;
     }
 
-    & li{
-      background-image: linear-gradient(80deg, transparent 0%, transparent 0%, $color__navyblue 150%);
+    & li {
+      background-image: linear-gradient(
+        80deg,
+        transparent 0%,
+        transparent 0%,
+        $color__navyblue 150%
+      );
       background-size: 0%;
       background-repeat: no-repeat;
-      transition: all .4s;
+      transition: all 0.4s;
       list-style: none;
 
-      &:hover{
+      &:hover {
         background-size: 100%;
         transform: translateX(1rem);
-        transition: all .2s;
+        transition: all 0.2s;
       }
     }
-    & li a{
-      font-family: 'Kavoon', cursive;
+    & li a {
+      font-family: "Kavoon", cursive;
       text-decoration: none;
       color: $color__navyblue;
     }
   }
 
-  &--collection{
+  &--collection {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -211,7 +346,7 @@
     margin-top: 2rem;
   }
 
-  &--collection--2{
+  &--collection--2 {
     display: flex;
     width: 80%;
     justify-content: center;
@@ -221,57 +356,57 @@
   }
 }
 
-.banner{
+.banner {
   position: relative;
 
-  &--header{
+  &--header {
     font-size: 13rem;
     text-decoration: underline;
     color: $color__white;
-    font-family: 'Bangers', cursive;
+    font-family: "Bangers", cursive;
     position: absolute;
     @include absolutecenter;
   }
 
-  &--img{
+  &--img {
     position: relative;
     z-index: -1;
   }
 }
 ////////////////////////////////////////////////////////
 //CONTACT PAGE
-.contact_form{
+.contact_form {
   display: flex;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-.contact_form > *:not(#dropdown){
+.contact_form > *:not(#dropdown) {
   margin-top: 2rem;
 }
 
-.contact_form > input{
+.contact_form > input {
   height: 4rem;
   border-radius: 5px;
   text-align: center;
   font-size: 1.6rem;
 }
 
-.contact_form textarea{
+.contact_form textarea {
   padding: 1.5rem;
 }
 
-.contact_form input[type=submit]{
+.contact_form input[type="submit"] {
   outline: none;
   border: none;
   background-color: $color__black;
   color: $color__white;
-  font-family: 'Bangers', cursive;
+  font-family: "Bangers", cursive;
   letter-spacing: 1.5rem;
 }
 
-.show__button{
+.show__button {
   position: absolute;
   top: 5;
   right: 45%;
@@ -280,17 +415,17 @@
   background-color: inherit;
   height: 1.3rem;
 
-  &:focus{
+  &:focus {
     outline: none;
     border: none;
   }
 
-  &--icon{
+  &--icon {
     display: none;
     width: 1.3rem;
     height: 1.3rem;
 
-    &--2{
+    &--2 {
       display: none;
       width: 1.3rem;
       height: 1.3rem;
